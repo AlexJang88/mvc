@@ -7,7 +7,7 @@
   	<servlet-class>test.mvc.controller.Hellocontroller</servlet-class>	
   	<init-param>
   		<param-name>commandURI</param-name>
-  		<param-value>C:\Users\y\git\repository\mvc\src\main\webapp\WEB-INF\properties\commandURI.properties</param-value>
+  		<param-value>D:\dev\mvc_git\src\main\webapp\WEB-INF\properties\commandURI.properties</param-value>
   	</init-param>
   </servlet>
   <servlet-mapping>
@@ -20,12 +20,23 @@
   	<servlet-class>member.mvc.controller.MemberController</servlet-class>
   	<init-param>
   		<param-name>memberURI</param-name>
-  		<param-value>C:\Users\y\git\repository\mvc\src\main\webapp\WEB-INF\properties\memberURI.properties</param-value>
+  		<param-value>D:\dev\mvc_git\src\main\webapp\WEB-INF\properties\memberURI.properties</param-value>
   	</init-param>
   </servlet>
   <servlet-mapping>
   	<servlet-name>user</servlet-name>
   	<url-pattern>*.me</url-pattern>
   </servlet-mapping>
-   
+  <servlet>
+  	<servlet-name>board</servlet-name>
+  	<servlet-class>board.mvc.controller.BoardController</servlet-class>
+  	<init-param>
+  		<param-name>boardURI</param-name>
+  		<param-value>D:\dev\mvc_git\src\main\webapp\WEB-INF\properties\boardURI.properties</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>board</servlet-name>
+  	<url-pattern>*.bo</url-pattern>
+  </servlet-mapping>
 </web-app>
