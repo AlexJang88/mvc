@@ -48,6 +48,9 @@ public class Hellocontroller extends HttpServlet{
 
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+				//웹 상에서 요청받는방식 GET,POST (JSP에서만) / PUT,DELETE(모든곳에서)
+		
+		
 				//URL
 				//http://localhost:8080/mvc/board/main/list.do
 				
@@ -55,7 +58,7 @@ public class Hellocontroller extends HttpServlet{
 				//   /mvc/board/main/list.do
 		String uri=request.getRequestURI();
 		
-			//action class(MODEL)
+//		action class(MODEL)
 //		properties파일 쓰기전에했던 작업
 		String view="/WEB-INF/views/";
 		SuperAction sa = (SuperAction)map.get(uri);

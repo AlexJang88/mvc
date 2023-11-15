@@ -15,4 +15,17 @@
   	<url-pattern>*.do</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>user</servlet-name>
+  	<servlet-class>member.mvc.controller.MemberController</servlet-class>
+  	<init-param>
+  		<param-name>memberURI</param-name>
+  		<param-value>C:\Users\y\git\repository\mvc\src\main\webapp\WEB-INF\properties\memberURI.properties</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>user</servlet-name>
+  	<url-pattern>*.me</url-pattern>
+  </servlet-mapping>
+   
 </web-app>
