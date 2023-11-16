@@ -9,7 +9,11 @@ public class DeleteFormAction implements SuperAction {
 
 	@Override
 	public String action(HttpServletRequest request, HttpServletResponse response) {
-		// TODO Auto-generated method stub
+		
+		int num = Integer.parseInt(request.getParameter("num"));
+		String pageNum = request.getParameter("pageNum");
+		request.setAttribute("num", num);
+		request.setAttribute("pageNum", pageNum);
 		return "board/deleteForm.jsp";
 	}
 
